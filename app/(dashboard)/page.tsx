@@ -40,6 +40,7 @@ const IssuesPage = () => {
       console.error(result.error)
     }
     if (result.data) {
+      await replay()
       close()
       setIssueName('')
       setIssueDescription('')
